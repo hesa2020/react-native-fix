@@ -7,7 +7,11 @@
 
 #import <Foundation/Foundation.h>
 
+#if __has_include("RCTDefines.h")
+#import "RCTDefines.h"
+#else
 #import <React/RCTDefines.h>
+#endif
 
 @class RCTBridge;
 @protocol RCTBridgeMethod;
